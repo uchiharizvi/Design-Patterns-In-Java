@@ -1,8 +1,7 @@
 # Builder Design Pattern
+## Build a Product Object that requires name, price and quantity
 
-### Build a Product Object that requires name, price and quantity
-
-### Implementation
+## Implementation
 
 1. Product Class
    * Only getters for member vars
