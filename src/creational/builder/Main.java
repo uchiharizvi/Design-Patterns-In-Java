@@ -9,8 +9,8 @@ public class Main {
                 .build();
 
         System.out.println();
-        System.out.println("Product Name: " + product.getName());
-        System.out.println("Product Price: " + product.getPrice());
-        System.out.println("Product Quantity: " + product.getQuantity());
+        System.out.println("ProductConcrete Name: " + product.getName());
+        System.out.println("ProductConcrete Price: " + product.getPrice());
+        System.out.println("ProductConcrete Quantity: " + product.getQuantity());
     }
 }

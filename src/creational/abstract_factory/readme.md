@@ -13,21 +13,21 @@ Here’s a basic example of how you can implement the Abstract Factory Pattern i
 2. Create Product Implementations
 3. Define Abstract Factory Interface - Which will define methods to create different types of Products.
 4. Create Factory Implementations
-5. Create Main Execution - Initialize ProductFactory, use factory to create a product(s) of factory type
+5. Create Main Execution - Initialize ProductFactory, use factory to create a productConcrete(s) of factory type
 
 ## Advantages
 
 1.	Separation of Concerns:
       Each factory is responsible for creating products of a specific category, adhering to the Single Responsibility Principle.
 2.	Scalability:
-Adding a new product category (e.g., Clothing) only requires creating a new concrete factory and product classes, without modifying existing code.
+Adding a new productConcrete category (e.g., Clothing) only requires creating a new concrete factory and productConcrete classes, without modifying existing code.
 3.	Flexibility:
-The client code depends only on the abstract factory and product interfaces, making it easy to extend or modify.
+The client code depends only on the abstract factory and productConcrete interfaces, making it easy to extend or modify.
 
 ## Difference over Family Pattern
 
 1. Use Abstract Factory When You Have Families of Products
-   * Factory Method: Produces a single product.
+   * Factory Method: Produces a single productConcrete.
    * Abstract Factory: Produces multiple related products as a family, ensuring compatibility between them.
    * Suppose you’re building a GUI application. With a Factory Method, you can create a Button. 
    But with Abstract Factory, you can create a family of compatible components like a Button, 
@@ -39,13 +39,13 @@ The client code depends only on the abstract factory and product interfaces, mak
    behavior or style.
    * If you use a MacFactory, you’ll get a MacButton and MacCheckbox, ensuring that both are consistent and compatible.
 3. Decouples Client Code from Concrete Factories
-   * Factory Method: The client is tied to one type of product at a time.
+   * Factory Method: The client is tied to one type of productConcrete at a time.
    * Abstract Factory: The client can switch between entire families of products by simply changing the factory instance.
    * Imagine a theme switcher in your application:
-     * With Factory Method: You would need to individually change how each product (e.g., Button, Checkbox) is instantiated.
+     * With Factory Method: You would need to individually change how each productConcrete (e.g., Button, Checkbox) is instantiated.
      * With Abstract Factory: You just swap the factory (e.g., from MacFactory to WindowsFactory), and all related products change accordingly.
 4. Scalability for Multiple Product Families
-   * When the number of product types grows, the Abstract Factory Pattern is more scalable than Factory Method.
+   * When the number of productConcrete types grows, the Abstract Factory Pattern is more scalable than Factory Method.
    * If you have:
      * Product categories like Electronics, Furniture, and Clothing. 
      * Subcategories within each (e.g., Laptop, Chair, Shirt).
@@ -55,6 +55,6 @@ The client code depends only on the abstract factory and product interfaces, mak
 
 ## When to Use Factory Method Over Abstract Factory
 
-1. **Simple Requirements**: Use Factory Method if you need to create only one product type (e.g., a specific type of Product object).
+1. **Simple Requirements**: Use Factory Method if you need to create only one productConcrete type (e.g., a specific type of Product object).
 2.	**Less Complexity**: Factory Method is easier to implement and understand. Abstract Factory adds complexity by introducing families of products and multiple creation methods.
 3. **No Dependency Between Products**: If the products are unrelated and don’t require compatibility (e.g., creating Button and TextField independently), a Factory Method is sufficient.

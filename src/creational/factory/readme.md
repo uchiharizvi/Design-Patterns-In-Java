@@ -20,8 +20,8 @@ Let us apply this pattern into the Product Creation
 ## Advantages
 
 1. Encapsulation of Object Creation:
-    The Factory Pattern abstracts the creation logic from the client code. The client simply calls a method on the factory and gets the appropriate product without worrying about the instantiation process.
+    The Factory Pattern abstracts the creation logic from the client code. The client simply calls a method on the factory and gets the appropriate productConcrete without worrying about the instantiation process.
 2. Flexibility to Change Product Classes:
-    The factory can be modified to return different types of products without affecting the client code. If you add new product types, the client doesn’t need to change its code, only the factory class.
+    The factory can be modified to return different types of products without affecting the client code. If you add new productConcrete types, the client doesn’t need to change its code, only the factory class.
 3. Decoupling of Object Creation:
-   The factory decouples the client from the concrete classes. The client only knows about the product interface, not the actual implementation.
+   The factory decouples the client from the concrete classes. The client only knows about the productConcrete interface, not the actual implementation.
